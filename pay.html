@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment | New Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+  <div class="payment-shell">
+    <section class="summary-card">
+      <span class="summary-tag">Secure Checkout</span>
+      <h1>Complete your payment with a polished checkout form.</h1>
+      <p>This redesigned page gives your assignment a more premium and professional look while keeping the form structure easy to understand.</p>
+      <div class="summary-box">
+        <div>
+          <span>Order Total</span>
+          <strong>LKR 410,000.00</strong>
+        </div>
+        <div>
+          <span>Delivery</span>
+          <strong>Free</strong>
+        </div>
+        <div>
+          <span>Payment Type</span>
+          <strong>Credit / Debit Card</strong>
+        </div>
+      </div>
+      <a href="Addtocart.html" class="back-link">← Back to Cart</a>
+    </section>
+
+    <section class="form-card">
+      <form action="#">
+        <div class="row">
+          <div class="column">
+            <h3 class="title">Billing Address</h3>
+            <div class="input-box">
+              <span>Full Name</span>
+              <input type="text" placeholder="Samara Weera">
+            </div>
+            <div class="input-box">
+              <span>Email Address</span>
+              <input type="email" placeholder="example@example.com">
+            </div>
+            <div class="input-box">
+              <span>Address</span>
+              <input type="text" placeholder="Home, Street, Locality">
+            </div>
+            <div class="input-box">
+              <span>City</span>
+              <input type="text" placeholder="Colombo">
+            </div>
+            <div class="flex">
+              <div class="input-box">
+                <span>Country</span>
+                <input type="text" placeholder="Sri Lanka">
+              </div>
+              <div class="input-box">
+                <span>Zip Code</span>
+                <input type="number" placeholder="10100">
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <h3 class="title">Payment Details</h3>
+            <div class="input-box">
+              <span>Cards Accepted</span>
+              <img src="image/imgcards.png" alt="Accepted Cards">
+            </div>
+            <div class="input-box">
+              <span>Name on Card</span>
+              <input type="text" placeholder="Mr. Samara Weera">
+            </div>
+            <div class="input-box">
+              <span>Card Number</span>
+              <input type="text" placeholder="xxxx xxxx xxxx xxxx">
+            </div>
+            <div class="input-box">
+              <span>Expiry Month</span>
+              <input type="text" placeholder="July">
+            </div>
+            <div class="flex">
+              <div class="input-box">
+                <span>Expiry Year</span>
+                <input type="number" placeholder="2029">
+              </div>
+              <div class="input-box">
+                <span>CVV</span>
+                <input type="number" placeholder="123">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="payment-btn">Submit Payment</button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>

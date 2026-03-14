@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Access | New Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="adminlogin.css">
+</head>
+<body>
+  <main class="admin-shell">
+    <section class="admin-info">
+      <span class="badge">Administrator Panel</span>
+      <h1>Control your store with a more elegant admin screen.</h1>
+      <p>This redesigned page gives your assignment a cleaner professional appearance while still keeping the sign up and login structure simple.</p>
+      <div class="info-grid">
+        <article>
+          <strong>Secure Access</strong>
+          <span>Admin login with a modern card layout</span>
+        </article>
+        <article>
+          <strong>Fast Navigation</strong>
+          <span>Quick access to the admin dashboard</span>
+        </article>
+      </div>
+      <a href="Addtocart.html" class="back-link">← Return to Store</a>
+    </section>
+
+    <section class="admin-card">
+      <div class="toggle-row">
+        <button class="toggle-btn active" id="showLogin" type="button">Login</button>
+        <button class="toggle-btn" id="showSignup" type="button">Sign Up</button>
+      </div>
+
+      <div class="panel active" id="loginPanel">
+        <h2>Admin Login</h2>
+        <p>Enter your details to open the dashboard.</p>
+        <form onsubmit="Log(); return false;">
+          <div class="field">
+            <label>Email Address</label>
+            <input type="email" placeholder="admin@newtech.com" required>
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <input type="password" placeholder="Enter password" required>
+          </div>
+          <button class="admin-btn" type="submit">Open Dashboard</button>
+        </form>
+      </div>
+
+      <div class="panel" id="signupPanel">
+        <h2>Create Admin</h2>
+        <p>Register a new administrator account.</p>
+        <form onsubmit="Log(); return false;">
+          <div class="field">
+            <label>Full Name</label>
+            <input type="text" placeholder="Admin name" required>
+          </div>
+          <div class="field">
+            <label>Email Address</label>
+            <input type="email" placeholder="admin@newtech.com" required>
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <input type="password" placeholder="Create password" required>
+          </div>
+          <button class="admin-btn" type="submit">Create Account</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const showLogin = document.getElementById('showLogin');
+    const showSignup = document.getElementById('showSignup');
+    const loginPanel = document.getElementById('loginPanel');
+    const signupPanel = document.getElementById('signupPanel');
+
+    showLogin.addEventListener('click', () => {
+      showLogin.classList.add('active');
+      showSignup.classList.remove('active');
+      loginPanel.classList.add('active');
+      signupPanel.classList.remove('active');
+    });
+
+    showSignup.addEventListener('click', () => {
+      showSignup.classList.add('active');
+      showLogin.classList.remove('active');
+      signupPanel.classList.add('active');
+      loginPanel.classList.remove('active');
+    });
+  </script>
+  <script src="login.js"></script>
+</body>
+</html>

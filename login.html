@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Login | New Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="promo-panel">
+      <div class="promo-badge">New Tech</div>
+      <h1>Welcome back to your professional tech store.</h1>
+      <p>Sign in to continue shopping, manage your orders, and enjoy a polished customer experience created with HTML, CSS and JavaScript.</p>
+      <ul>
+        <li>Clean and modern interface</li>
+        <li>Responsive student-friendly design</li>
+        <li>Simple login and sign up interaction</li>
+      </ul>
+      <a href="Addtocart.html" class="back-link">← Back to Store</a>
+    </section>
+
+    <section class="form-panel">
+      <div class="wrapper">
+        <div class="form-wrapper sign-in">
+          <form action="#" onsubmit="Go(); return false;">
+            <p class="form-tag">Customer Access</p>
+            <h2>Sign In</h2>
+            <div class="input-group">
+              <input type="text" required>
+              <label>Username</label>
+            </div>
+            <div class="input-group">
+              <input type="password" required>
+              <label>Password</label>
+            </div>
+            <div class="remember">
+              <label><input type="checkbox"> Remember me</label>
+              <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="auth-btn">Login</button>
+            <div class="switch-link">
+              <p>Don’t have an account? <a href="#" class="signUpBtn-link">Create one</a></p>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-wrapper sign-up">
+          <form action="#" onsubmit="Go(); return false;">
+            <p class="form-tag">New Customer</p>
+            <h2>Create Account</h2>
+            <div class="input-group">
+              <input type="text" required>
+              <label>Username</label>
+            </div>
+            <div class="input-group">
+              <input type="email" required>
+              <label>Email</label>
+            </div>
+            <div class="input-group">
+              <input type="password" required>
+              <label>Password</label>
+            </div>
+            <div class="remember">
+              <label><input type="checkbox"> I agree to the terms and conditions</label>
+            </div>
+            <button type="submit" class="auth-btn">Sign Up</button>
+            <div class="switch-link">
+              <p>Already have an account? <a href="#" class="signInBtn-link">Sign in now</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="login.js"></script>
+</body>
+</html>

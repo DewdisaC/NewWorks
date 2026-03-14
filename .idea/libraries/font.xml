@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="font">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/font/my-icons-collection.zip!/" />
+      <root url="jar://$PROJECT_DIR$/font/my-icons-collection (46).zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
