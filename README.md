@@ -2,7 +2,7 @@
 
 <p align="center"><img src="./assets/banner.svg" alt="NewWorks banner" width="100%"></p>
 
-<p align="center">A web-development workspace containing frontend experiments, UI work and reusable web components.</p>
+<p align="center">A preserved frontend experimentation workspace containing earlier UI experiments, reusable components and browser prototypes.</p>
 
 ## Overview
 
@@ -20,7 +20,7 @@ It contains practical experiments and reusable pieces developed while learning a
 
 ## 📚 Purpose
 
-This repository is primarily a learning and experimentation space. Individual experiments may be extracted into dedicated projects as they become more complete.
+This repository is an **experimental archive**, not a primary portfolio project. Individual ideas that become production-ready should be moved into focused repositories with their own documentation, tests and deployment workflow.
 
 ## Author
 
